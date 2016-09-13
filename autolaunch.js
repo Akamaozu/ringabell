@@ -10,7 +10,7 @@ var AutoLaunch = require('./auto-launch'),
       name: 'ringabell',
       
       // windows specific -- need to find a way for our mac friends to use this
-      path: '"cmd" /c cd ' + process.cwd() + ' && START /MIN "ringabell" "' + nodeLocation + '" app.js',
+      path: '"cmd" /c cd ' + process.cwd() + ' && START /MIN "ringabell" "' + nodeLocation + '" hidden-terminal-app.js',
     });
 
 module.exports = ringabellAutoLauncher;
